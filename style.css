@@ -1,0 +1,519 @@
+/* Overall */
+
+html {
+  box-sizing: border-box;
+}
+
+/* Nav */
+
+.nav-flex-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 120px;
+  background-color: rgb(189, 189, 189);
+}
+
+.nav-flex-container div {
+  background-color: rgb(182, 182, 182);
+  height: 50px;
+  width: 100px;
+  margin: 30px 20px;
+  flex: 1;
+}
+
+.nav-flex-container div:first-child {
+  flex-grow: 1.2;
+  background-color: rgb(143, 143, 143);
+  max-width: 200px;
+}
+
+.nav-flex-container div:nth-last-child(2) {
+  background-color: rgb(122, 122, 122);
+}
+
+.nav-flex-container div:last-child {
+  flex: 2;
+  background-color: rgb(122, 122, 122);
+  max-width: 350px;
+}
+
+/* Featured Articles */
+
+.featured-art-heading {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  margin-left: -200px;
+  padding: 10px 0;
+}
+
+.featured-art-heading div {
+  background-color: rgb(99, 98, 98);
+  height: 70px;
+  width: 400px;
+  margin: 0 auto 0 auto;
+}
+
+#featured-art-heading-pt2 {
+  width: 180px;
+}
+
+.featured-articles-container {
+  height: calc(100vh - 100px);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.featured-articles-container article {
+  padding: 230px 75px 140px 75px;
+  background-color: rgb(197, 197, 197);
+}
+
+.featured-articles-container .first {
+  background-color: rgb(161, 161, 161);
+}
+
+.featured-articles-container .last {
+  background-color: rgb(173, 172, 172);
+}
+
+.featured-articles-container article > * {
+  margin-bottom: 20px;
+}
+
+.featured-art-author {
+  height: 50px;
+  width: 60%;
+  background-color: rgb(99, 98, 98);
+}
+
+.featured-art-headline {
+  height: 150px;
+  width: 100%;
+  background-color: rgb(122, 122, 122);
+}
+
+.featured-art-hashtag {
+  height: 40px;
+  width: 40%;
+  background-color: rgb(122, 122, 122);
+}
+
+.featured-art-next {
+  height: 20px;
+  width: 10%;
+  background-color: rgb(141, 141, 141);
+  margin-top: 220px;
+}
+
+/* Latest articles */
+
+.latest-articles-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+  margin: 0 50px;
+  align-content: flex-start;
+  padding-top: 50px;
+}
+
+.latest-articles-container article {
+  height: 640px;
+  padding: 50px 10px;
+}
+
+.latest-articles-container article > * {
+  margin-bottom: 20px;
+}
+
+.latest-art-time {
+  height: 30px;
+  width: 15%;
+  background-color: rgb(146, 145, 145);
+}
+
+.latest-art-headline {
+  height: 100px;
+  width: 90%;
+  background-color: rgb(121, 120, 120);
+}
+
+.latest-art-author {
+  height: 30px;
+  width: 60%;
+  background-color: rgb(146, 145, 145);
+}
+
+.latest-art-blurb {
+  height: 200px;
+  width: 90%;
+  background-color: rgb(172, 172, 172);
+}
+
+.latest-art-next {
+  height: 20px;
+  width: 10%;
+  background-color: rgb(199, 199, 199);
+  margin-top: 70px;
+}
+
+.grammar-1 {
+  height: 20px;
+  width: 40%;
+  background-color: rgb(172, 172, 172);
+  margin: 0 auto;
+}
+
+.grammar-2 {
+  height: 30%;
+  width: 80%;
+  border-radius: 5px;
+  background-color: rgb(100, 100, 100);
+  margin: 0 auto;
+}
+
+.smashing-ad {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 250px 55px 100px 50px 50px;
+  grid-gap: 20px;
+  padding-top: 25px !important;
+  background-color: rgb(185, 184, 184);
+  border-radius: 8px;
+}
+
+.smashing-ad .ad-image {
+  height: 250px;
+  width: 250px;
+  background-color: rgb(85, 85, 85);
+  margin: 0 auto;
+}
+
+.smashing-ad .ad-headline {
+  height: 55px;
+  width: 540px;
+  background-color: rgb(95, 95, 95);
+  margin: 0 auto;
+}
+
+.smashing-ad .ad-blurb {
+  height: 99px;
+  width: 600px;
+  background-color: rgb(167, 167, 167);
+  margin: 0 auto;
+}
+
+.smashing-ad .ad-cta {
+  height: 50px;
+  width: 220px;
+  background-color: rgb(90, 90, 90);
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.smashing-ad .ad-sign-in {
+  height: 30px;
+  width: 260px;
+  background-color: rgb(151, 151, 151);
+  margin: 0 auto;
+}
+
+.all-articles {
+  grid-column: 1 / 5;
+}
+
+.all-articles div {
+  height: 50px;
+  width: 300px;
+  margin: 20px auto 100px auto;
+  background-color: rgb(172, 172, 172);
+}
+
+/* Book ad */
+
+.book-sell {
+  height: 100vh;
+  background-color: rgb(172, 172, 172);
+  padding: 30px 0;
+}
+
+.book-sell-date {
+  height: 30px;
+  width: 300px;
+  background-color: rgb(138, 133, 133);
+  margin: 30px auto;
+}
+
+.book-sell-headline {
+  height: 150px;
+  width: 715px;
+  background-color: rgb(95, 95, 95);
+  margin: 30px auto;
+}
+
+.book-sell-blurb {
+  height: 80px;
+  width: 860px;
+  background-color: rgb(151, 151, 151);
+  margin: 30px auto;
+}
+
+.book-sell-cta {
+  height: 80px;
+  width: 380px;
+  background-color: rgb(95, 95, 95);
+  margin: 30px auto;
+  border-radius: 5px;
+}
+
+.book-sell-image {
+  height: 517px;
+  width: 920px;
+  background-color: rgb(102, 102, 102);
+  margin: 30px auto;
+}
+
+/* Person of the week */
+
+.person-week {
+  margin: 80px 50px 150px 50px;
+  position: relative;
+}
+
+.person-image {
+  height: 284px;
+  width: 284px;
+  background-color: rgb(95, 95, 95);
+  transform: rotate(-12deg);
+  border-radius: 8px;
+  float: left;
+}
+
+.person-headline {
+  height: 50px;
+  width: 300px;
+  background-color: rgb(121, 121, 121);
+  position: relative;
+  left: 350px;
+  margin-bottom: 30px;
+}
+
+.person-blurb {
+  height: 200px;
+  width: 70%;
+  background-color: rgb(136, 136, 136);
+  position: relative;
+  left: 350px;
+}
+
+/* Twitter Links */
+
+.twitter-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 450px);
+  margin: 50px;
+}
+
+.twitter-link-child {
+  padding: 10px 10px 40% 10px;
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  grid-gap: 10px;
+}
+
+.twitter-link-img div {
+  height: 84px;
+  width: 84px;
+  background-color: rgb(95, 95, 95);
+  transform: rotate(-12deg);
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.twitter-link-author {
+  height: 50px;
+  width: 200px;
+  background-color: rgb(139, 139, 139);
+  margin-bottom: 10px;
+}
+
+.twitter-link-headline {
+  height: 50px;
+  width: 380px;
+  background-color: rgb(114, 114, 114);
+  margin-bottom: 10px;
+}
+
+.twitter-link-blurb {
+  height: 200px;
+  width: 80%;
+  background-color: rgb(163, 163, 163);
+  margin-bottom: 10px;
+}
+
+.more-twitter-links {
+  grid-column: 1 / 3;
+}
+
+.more-twitter-links div {
+  height: 50px;
+  width: 300px;
+  margin: 15px auto 70px auto;
+  background-color: rgb(172, 172, 172);
+}
+
+/* Second book ad */
+
+.book-sell-2 {
+  height: 415px;
+  background-color: rgb(184, 184, 184);
+  padding: 20px 75px;
+}
+
+.book-sell-2-intro {
+  height: 30px;
+  width: 20%;
+  background-color: rgb(141, 141, 141);
+  margin: 10px 0;
+}
+
+.book-sell-2-headline {
+  height: 80px;
+  width: 30%;
+  background-color: rgb(97, 96, 96);
+  margin: 10px 0;
+}
+
+.book-sell-2-blurb {
+  height: 150px;
+  width: 60%;
+  background-color: rgb(155, 155, 155);
+  margin: 10px 0;
+}
+
+.book-sell-2-cta {
+  height: 70px;
+  width: 35%;
+  background-color: rgb(95, 95, 95);
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.book-sell-2-image {
+  height: 415px;
+  width: 320px;
+  background-color: rgb(88, 86, 86);
+  transform: rotate(-12deg) translateY(-75px);
+  float: right;
+}
+
+/* Smashing Guides */
+
+.our-guides {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin: 80px 100px 0 50px;
+}
+
+.our-guides article {
+  background-color: rgb(223, 222, 222);
+  height: 580px;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.our-guides article > * {
+  margin-bottom: 20px;
+}
+
+.our-guides .guide-intro {
+  width: 50%;
+  height: 18px;
+  background-color: rgb(151, 150, 150);
+}
+
+.our-guides .guide-headline {
+  width: 70%;
+  height: 120px;
+  background-color: rgb(107, 107, 107);
+}
+
+.our-guides .guide-blurb {
+  width: 90%;
+  height: 205px;
+  background-color: rgb(165, 165, 165);
+}
+
+.our-guides .guide-cta {
+  width: 90%;
+  height: 95px;
+  background-color: rgb(95, 95, 95);
+  border-radius: 8px;
+}
+
+/* Email newsletter */
+
+.email-newsletter {
+  height: 800px;
+  width: 650px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: rgb(150, 150, 150);
+}
+
+.email-newsletter > * {
+  margin-bottom: 15px;
+}
+
+.email-newsletter-img {
+  height: 365px;
+  width: 365px;
+  border-radius: 50%;
+  background-color: rgb(107, 107, 107);
+  margin: 15px auto;
+}
+
+.email-newsletter-headline {
+  height: 65px;
+  width: 60%;
+  background-color: rgb(95, 94, 94);
+}
+
+.email-newsletter-blurb {
+  height: 100px;
+  width: 90%;
+  background-color: rgb(121, 121, 121);
+}
+
+.email-newsletter-signup {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  grid-template-rows: 65px;
+}
+
+.email-newsletter-signup .newsletter-input {
+  background-color: rgb(95, 94, 94);
+}
+
+.email-newsletter-signup .newsletter-submit {
+  background-color: rgb(104, 102, 102);
+}
+
+.email-newsletter-desc {
+  width: 380px;
+  height: 75px;
+  margin: 0 auto;
+  background-color: rgb(109, 109, 109);
+}
+
+/* Footer */
+
+footer {
+  height: 70vh;
+  background-color: rgb(136, 136, 136);
+}
